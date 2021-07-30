@@ -1,0 +1,3 @@
+[พี] card แบ่งเป็น 6 การ์ดไม่ได้
+
+แก้ไข Class Diagram และ Sequence Dashboard
