@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="red" style="width: 100px; height: 100px; background-color: red;">
+    </div>
+    <div class="blue" style="width: 100px; height: 100px; background-color: blue;">
+    </div>
+    <button onclick="fade_out()">จางหาย</button>
+    <button onclick="slide_up()">เลื่อนขึ้น</button>
+
+    <script>
+        function fade_out() {
+            $('div.red').fadeOut(1000);
+        }
+        function slide_up() {
+            $('div.blue').slideUp(1000);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- <div style="width: 100px; height: 100px; background-color: aquamarine;"></div>
+
+    <div id="purple_div" style="width: 100px; height: 100px; background-color: purple;"></div>
+
+    <div class="orange_div" style="width: 100px; height: 100px; background-color: orangered;"></div> -->
+
+    <p class="orange_div" style="width: 100px; height: 100px; background-color: orangered;"></p>
+    
+    <button onclick="show()">แสดง</button>
+    <button onclick="hide()">ซ่อน</button>
+    
+    <script>
+        // 1000 = 1 วินาที
+        // เข้าถึง tag $('div')
+        // เข้าถึงจาก id $('#some_id')
+
+        function show() {
+            $('p.orange_div').slideDown();
+        }
+        function hide() {
+            $('p.orange_div').slideUp();
+        }
+    </script>
+    
+</body>
+</html>

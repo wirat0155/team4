@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // length
+        var name = "Apisit Sangsai";
+        console.log(name.length);
+
+        var array = ['Wantana', 'Apisit'];
+        console.log(array[0].length + array[1].length);
+
+        var new_name = '';
+        for (var i = name.length - 1; i >= 0; i--) {
+            new_name += name[i];
+        }
+        console.log(new_name);
+
+        console.log(name.search(/SIT/i));
+
+        // substring
+        // 0-6
+        // index start, index end
+        console.log(name.substring(0, name.search(' ')));
+
+        // 0, 6
+        // index start, length
+        console.log(name.substr(0, name.search(' ')));
+    </script>
+</body>
+</html>
