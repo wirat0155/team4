@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // date วันที่
+        var now = new Date();   // เข้าถึงวันที่ เวลาปัจจุบัน
+        console.log(now);
+
+        console.log(now.getFullYear());
+        console.log(now.getMonth() + 1);
+        console.log(now.getDate());
+        console.log(now.getDay()); // 0 = sunday ไล่ไปเรื่อย ๆ
+
+        console.log(now.getHours());
+        console.log(now.getMinutes());
+        console.log(now.getSeconds());
+
+        // 13/08/2021
+        // 13/8/2021
+        console.log(now.getDate() + "/" + (now.getMonth() + 1) + "/" + now.getFullYear());
+        console.log(1+1);
+        console.log(1 + "1");
+        console.log(1 * "1");
+        // + จะเป็น string (ต่อ String)
+        // - * / % เป็น number
+
+
+        // 31 Aug 2021
+        now.setFullYear(2020);  // 31 Aug 2020
+        now.setMonth(1);        // 31 Feb 2020
+        // 29 Feb = 29 Feb
+        // 30 Feb = 1 Mar
+        // 31 Feb = 2 Mar
+
+        // 2 Mar 2020
+        now.setDate(7);         // 7 Mar 2020
+        // ไม่มี setDay
+        now.setHours(7);
+        now.setMinutes(0);
+        now.setSeconds(45);
+
+
+        console.log(now);
+    </script>
+</body>
+</html>

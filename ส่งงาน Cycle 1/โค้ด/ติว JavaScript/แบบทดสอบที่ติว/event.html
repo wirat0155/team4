@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="show_alert()">
+        click me
+    </button>
+
+    <input type="text" onchange="show_alert()">
+    <input type="text" oninput="show_alert()">
+    <input type="text" onblur="show_alert()">
+
+    <!-- keypress กดปุ่มธรรมดา -->
+    <input type="text" onkeypress="close_window()"> 
+    <!-- keydown นับทุกปุ่ม -->
+    <input type="text" onkeydown="close_window()">
+
+    <span onmouseover="close_window()">เอาเมาส์มาวางสิ</span>
+    <span onmouseout="close_window()">เอาเมาส์ออก</span>
+
+    <script>
+        function close_window() {
+            alert("ปณิดาเล่นแต่เกม ไม่เคยฟัง");
+        }
+    </script>
+</body>
+</html>

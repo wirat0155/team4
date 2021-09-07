@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var now = new Date();
+        console.log(now.getHours() + ":" + now.getMinutes());
+
+        var my_birthdate = new Date(2000,11,11);
+        
+        var day = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
+        console.log("my birthdate is : " + day[my_birthdate.getDay()] + " " + my_birthdate.getDate() + "/" + (my_birthdate.getMonth()+1) + "/" + my_birthdate.getUTCFullYear());
+    </script>
+</body>
+</html>
