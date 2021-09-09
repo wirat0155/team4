@@ -1,4 +1,7 @@
-งาน : Reuse Function Controller
+งาน : Reuse Function
 คนทำ : กิตติพศ
+คนตรวจ : วริศรา กล้ายุทธ
 
 1. ไฟล์ Reuse Function Controller
+2. ไฟล์ Reuse Function View
+3. ไฟล์ Reuse Function Model

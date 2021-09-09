@@ -1,0 +1,6 @@
+งาน :  Burndown & Velocity Chart 
+คนทำ : วรรัตน์
+คนตรวจ : ธนาธิป
+
+1. ไฟล์ Burndown
+2. ไฟล์ Velocity Chart 
