@@ -1,7 +1,0 @@
-งาน : SUMS LOGT LOGD
-คนทำ : สมาชิกทีม 4
-คนตรวจ : ณัฐดนัย
-
-1. ไฟล์ SUMS 
-2. ไฟล์ LOGT Sprint 1
-3. ไฟล์ LOGD Sprint 1
