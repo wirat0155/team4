@@ -1,0 +1,13 @@
+งาน : Reuse Document
+คนทำ : กิตติพศ 
+คนตรวจ : วิรัตน์
+
+1. ไฟล์ Reuse Document Data Dictionary
+2. ไฟล์ Reuse Document Activity
+3. ไฟล์ Reuse Document Sequence
+4. ไฟล์ Reuse Document State Machine
+5. ไฟล์ Reuse Document Use Case Description
+6. ไฟล์ Reuse Document Class Diagram
+7. ไฟล์ Reuse Document Use Case Diagram
+8. ไฟล์ Reuse Document ER Diagram
+ 
