@@ -31,5 +31,5 @@ Case CDMS-04-03-15
     Open Browser                                    http://localhost/code_team4/public/Agent_show/agent_show_ajax           chrome
     sleep                                           1s
     add_agent_wrong_agn_tax_format
-    Element Text Should Be                          //*[@id="agent_section"]/div[2]/div[1]/div[4]/label            Please enter number
+    Element Text Should Be                          xpath=//*[@id="agent_section"]/div[2]/div[1]/div[4]/label            Please enter number
     sleep                                           1s

@@ -2,7 +2,7 @@
 Library                     Selenium2Library
 
 **Variables**
-${agn_company_name}         เนคเทค
+${agn_company_name}         A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy
 ${agn_tax}                  1234567890123
 ${agn_address}              68/1 ตำบลอ่างศิลา อำเภอเมืองชลบุรี จังหวัดชลบุรี 20000
 ${agn_firstname}            อัศวิน
@@ -13,8 +13,10 @@ ${agn_firstname_lastname}   อัศวิน วงศ์สว่าง
 ${agn_tel_format}           090-888-9888
 
 **Keywords**
-add_agent_agn_company_name_exist
-    Click Element       xpath=//*[@id="Agent_list_table_filter"]/a
+update_agent_agn_company_name_length_256
+    Click Element       xpath=//*[@id="Agent_list_table"]/tbody/tr[1]
+    sleep               1s
+    Click Element       xpath=/html/body/div[1]/div[3]/div/div/div[1]/div/div/a
     sleep               1s
     Input Text          name=agn_company_name       ${agn_company_name}     
     Input Text          name=agn_tax                ${agn_tax}      
@@ -27,9 +29,9 @@ add_agent_agn_company_name_exist
 
 
 **Test Cases**
-Case CDMS-04-03-08
+Case CDMS-04-04-06
     Open Browser                                    http://localhost/code_team4/public/Agent_show/agent_show_ajax           chrome
     sleep                                           1s
-    add_agent_agn_company_name_exist
-    Element Text Should Be                          //*[@id="agent_section"]/div[2]/div[1]/div[2]/label               The agent has already used
+    update_agent_agn_company_name_length_256
+    Element Text Should Be                          xpath=//*[@id="agent_form"]/div[2]/div/div[1]/div[1]/div/label[1]            Please enter 1 - 255 character long
     sleep                                           1s

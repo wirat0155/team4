@@ -3,8 +3,8 @@ Library                     Selenium2Library
 
 **Variables**
 ${agn_company_name}         เนคเทค
-${agn_tax}                  1234567890123
-${agn_address}              68/1 ตำบลอ่างศิลา อำเภอเมืองชลบุรี จังหวัดชลบุรี 20000
+${agn_tax}                  งานเยอะจังเลยครับ
+${agn_address}              127/12 ต.แสนสุข ชลบุรี
 ${agn_firstname}            อัศวิน
 ${agn_lastname}             วงศ์สว่าง
 ${agn_tel}                  0908889888
@@ -13,8 +13,10 @@ ${agn_firstname_lastname}   อัศวิน วงศ์สว่าง
 ${agn_tel_format}           090-888-9888
 
 **Keywords**
-add_agent_agn_company_name_exist
-    Click Element       xpath=//*[@id="Agent_list_table_filter"]/a
+update_agent_wrong_agn_tax_format
+    Click Element       xpath=//*[@id="Agent_list_table"]/tbody/tr[1]
+    sleep               1s
+    Click Element       xpath=/html/body/div[1]/div[3]/div/div/div[1]/div/div/a
     sleep               1s
     Input Text          name=agn_company_name       ${agn_company_name}     
     Input Text          name=agn_tax                ${agn_tax}      
@@ -27,9 +29,9 @@ add_agent_agn_company_name_exist
 
 
 **Test Cases**
-Case CDMS-04-03-08
+Case CDMS-04-04-15
     Open Browser                                    http://localhost/code_team4/public/Agent_show/agent_show_ajax           chrome
     sleep                                           1s
-    add_agent_agn_company_name_exist
-    Element Text Should Be                          //*[@id="agent_section"]/div[2]/div[1]/div[2]/label               The agent has already used
+    update_agent_wrong_agn_tax_format
+    Element Text Should Be                          xpath=//*[@id="agent_form"]/div[2]/div/div[1]/div[2]/div/label            Please enter number
     sleep                                           1s
