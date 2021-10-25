@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.7 on win32)" generated="20211025 23:10:03.373" rpa="false" schemaversion="2">
+<suite id="s1" name="CDMS-04-03-13" source="C:\Users\pee20\OneDrive\เดสก์ท็อป\โฟลเดอร์ใหม่ (2)\ไฟล์ Robot\CDMS-04-03-13.robot">
+<test id="s1-t1" name="Case CDMS-04-03-13">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>http://localhost/code_team4/public/Agent_show/agent_show_ajax</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211025 23:10:03.580" level="INFO">Opening browser 'chrome' to base url 'http://localhost/code_team4/public/Agent_show/agent_show_ajax'.</msg>
+<status status="PASS" starttime="20211025 23:10:03.580" endtime="20211025 23:10:08.942"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211025 23:10:09.951" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211025 23:10:08.943" endtime="20211025 23:10:09.951"/>
+</kw>
+<kw name="add_agent_agn_address_length_255">
+<kw name="Click Element" library="Selenium2Library">
+<arg>xpath=//*[@id="Agent_list_table_filter"]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211025 23:10:09.952" level="INFO">Clicking element 'xpath=//*[@id="Agent_list_table_filter"]/a'.</msg>
+<status status="PASS" starttime="20211025 23:10:09.952" endtime="20211025 23:10:10.442"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211025 23:10:11.457" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211025 23:10:10.442" endtime="20211025 23:10:11.457"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>name=agn_company_name</arg>
+<arg>${agn_company_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211025 23:10:11.457" level="INFO">Typing text 'เนคเทค3' into text field 'name=agn_company_name'.</msg>
+<status status="PASS" starttime="20211025 23:10:11.457" endtime="20211025 23:10:11.538"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>name=agn_tax</arg>
+<arg>${agn_tax}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211025 23:10:11.539" level="INFO">Typing text '1234567890123' into text field 'name=agn_tax'.</msg>
+<status status="PASS" starttime="20211025 23:10:11.538" endtime="20211025 23:10:11.617"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>name=agn_address</arg>
+<arg>${agn_address}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211025 23:10:11.617" level="INFO">Typing text 'A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy' into text field 'name=agn_address'.</msg>
+<status status="PASS" starttime="20211025 23:10:11.617" endtime="20211025 23:10:11.863"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>name=agn_firstname</arg>
+<arg>${agn_firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211025 23:10:11.863" level="INFO">Typing text 'อัศวิน' into text field 'name=agn_firstname'.</msg>
+<status status="PASS" starttime="20211025 23:10:11.863" endtime="20211025 23:10:11.935"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>name=agn_lastname</arg>
+<arg>${agn_lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211025 23:10:11.936" level="INFO">Typing text 'วงศ์สว่าง' into text field 'name=agn_lastname'.</msg>
+<status status="PASS" starttime="20211025 23:10:11.936" endtime="20211025 23:10:12.009"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>name=agn_tel</arg>
+<arg>${agn_tel}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211025 23:10:12.009" level="INFO">Typing text '0908889888' into text field 'name=agn_tel'.</msg>
+<status status="PASS" starttime="20211025 23:10:12.009" endtime="20211025 23:10:12.095"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>name=agn_email</arg>
+<arg>${agn_email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211025 23:10:12.096" level="INFO">Typing text 'asawin@nectec.com' into text field 'name=agn_email'.</msg>
+<status status="PASS" starttime="20211025 23:10:12.096" endtime="20211025 23:10:12.185"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>class=positive</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211025 23:10:12.186" level="INFO">Clicking button 'class=positive'.</msg>
+<status status="PASS" starttime="20211025 23:10:12.185" endtime="20211025 23:10:12.826"/>
+</kw>
+<status status="PASS" starttime="20211025 23:10:09.952" endtime="20211025 23:10:12.826"/>
+</kw>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<arg>xpath=//*[@id="Agent_list_table"]/tbody/tr[1]/td[2]</arg>
+<arg>${agn_company_name}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20211025 23:10:12.827" level="INFO">Verifying element 'xpath=//*[@id="Agent_list_table"]/tbody/tr[1]/td[2]' contains exact text 'เนคเทค3'.</msg>
+<status status="PASS" starttime="20211025 23:10:12.827" endtime="20211025 23:10:12.858"/>
+</kw>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<arg>xpath=//*[@id="Agent_list_table"]/tbody/tr[1]/td[3]</arg>
+<arg>${agn_firstname_lastname}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20211025 23:10:12.859" level="INFO">Verifying element 'xpath=//*[@id="Agent_list_table"]/tbody/tr[1]/td[3]' contains exact text 'อัศวิน วงศ์สว่าง'.</msg>
+<status status="PASS" starttime="20211025 23:10:12.859" endtime="20211025 23:10:12.885"/>
+</kw>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<arg>xpath=//*[@id="Agent_list_table"]/tbody/tr[1]/td[4]</arg>
+<arg>0</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20211025 23:10:12.886" level="INFO">Verifying element 'xpath=//*[@id="Agent_list_table"]/tbody/tr[1]/td[4]' contains exact text '0'.</msg>
+<status status="PASS" starttime="20211025 23:10:12.886" endtime="20211025 23:10:12.912"/>
+</kw>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<arg>xpath=//*[@id="Agent_list_table"]/tbody/tr[1]/td[5]</arg>
+<arg>${agn_tel_format}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20211025 23:10:12.913" level="INFO">Verifying element 'xpath=//*[@id="Agent_list_table"]/tbody/tr[1]/td[5]' contains exact text '090-888-9888'.</msg>
+<status status="PASS" starttime="20211025 23:10:12.912" endtime="20211025 23:10:12.935"/>
+</kw>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<arg>xpath=//*[@id="Agent_list_table"]/tbody/tr[1]/td[6]</arg>
+<arg>${agn_email}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20211025 23:10:12.936" level="INFO">Verifying element 'xpath=//*[@id="Agent_list_table"]/tbody/tr[1]/td[6]' contains exact text 'asawin@nectec.com'.</msg>
+<status status="PASS" starttime="20211025 23:10:12.936" endtime="20211025 23:10:12.956"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211025 23:10:13.962" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211025 23:10:12.957" endtime="20211025 23:10:13.963"/>
+</kw>
+<status status="PASS" starttime="20211025 23:10:03.579" endtime="20211025 23:10:13.964"/>
+</test>
+<status status="PASS" starttime="20211025 23:10:03.374" endtime="20211025 23:10:13.966"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="CDMS-04-03-13">CDMS-04-03-13</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

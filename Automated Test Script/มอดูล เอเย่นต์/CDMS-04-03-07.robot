@@ -2,7 +2,7 @@
 Library                     Selenium2Library
 
 **Variables**
-${agn_company_name}         A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy
+${agn_company_name}         A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happyu
 ${agn_tax}                  1234567890123
 ${agn_address}              68/1 ตำบลอ่างศิลา อำเภอเมืองชลบุรี จังหวัดชลบุรี 20000
 ${agn_firstname}            อัศวิน
@@ -23,7 +23,7 @@ add_agent_agn_company_name_length_256
     Input Text          name=agn_lastname           ${agn_lastname}   
     Input Text          name=agn_tel                ${agn_tel}     
     Input Text          name=agn_email              ${agn_email} 
-    Click Button        xpath=//*[@id="add_agent_form"]/div/div/div/div[2]/button
+    Click Button        class=positive
 
 
 **Test Cases**

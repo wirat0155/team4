@@ -2,7 +2,7 @@
 Library                     Selenium2Library
 
 **Variables**
-${agn_company_name}         เนคเทค
+${agn_company_name}         เนคเทค5
 ${agn_tax}                  งานเยอะจังเลยครับ
 ${agn_address}              127/12 ต.แสนสุข ชลบุรี
 ${agn_firstname}            อัศวิน
@@ -23,7 +23,7 @@ add_agent_wrong_agn_tax_format
     Input Text          name=agn_lastname           ${agn_lastname}   
     Input Text          name=agn_tel                ${agn_tel}     
     Input Text          name=agn_email              ${agn_email} 
-    Click Button        xpath=//*[@id="add_agent_form"]/div/div/div/div[2]/button
+    Click Button        class=positive
 
 
 **Test Cases**
@@ -31,5 +31,5 @@ Case CDMS-04-03-15
     Open Browser                                    http://localhost/code_team4/public/Agent_show/agent_show_ajax           chrome
     sleep                                           1s
     add_agent_wrong_agn_tax_format
-    Element Text Should Be                          xpath=//*[@id="agent_section"]/div[2]/div[1]/div[4]/label            Please enter number
+    Element Text Should Be                          //*[@id="agent_section"]/div[2]/div[1]/div[4]/label            Please enter number
     sleep                                           1s

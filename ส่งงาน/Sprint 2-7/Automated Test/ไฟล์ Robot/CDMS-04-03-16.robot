@@ -2,15 +2,15 @@
 Library                     Selenium2Library
 
 **Variables**
-${agn_company_name}         เนคเทค
+${agn_company_name}         ร่ำรวย จำกัด
 ${agn_tax}                  123456789012
-${agn_address}              127/12 ต.แสนสุข ชลบุรี
-${agn_firstname}            อัศวิน
-${agn_lastname}             วงศ์สว่าง
+${agn_address}              111/1 ต.แสนสุข อ.เมืองชลบุรี จ.ชลบุรี
+${agn_firstname}            ขยัน
+${agn_lastname}             หมั่นเพียร
 ${agn_tel}                  0908889888
-${agn_email}                asawin@nectec.com
-${agn_firstname_lastname}   อัศวิน วงศ์สว่าง
-${agn_tel_format}           090-888-9888
+${agn_email}                kayan@gmail.com
+${agn_firstname_lastname}   ขยัน หมั่นเพียร
+${agn_tel_format}           0812345678
 
 **Keywords**
 add_agent_agn_tax_length_12
@@ -23,7 +23,7 @@ add_agent_agn_tax_length_12
     Input Text          name=agn_lastname           ${agn_lastname}   
     Input Text          name=agn_tel                ${agn_tel}     
     Input Text          name=agn_email              ${agn_email} 
-    Click Button        xpath=//*[@id="add_agent_form"]/div/div/div/div[2]/button
+    Click Button        class=positive
 
 
 **Test Cases**
@@ -31,5 +31,5 @@ Case CDMS-04-03-16
     Open Browser                                    http://localhost/code_team4/public/Agent_show/agent_show_ajax           chrome
     sleep                                           1s
     add_agent_agn_tax_length_12
-    Element Text Should Be                          xpath=//*[@id="agent_section"]/div[2]/div[1]/div[4]/label            Please enter 13 digit long
+    Element Text Should Be                          //*[@id="agent_section"]/div[2]/div[1]/div[4]/label            Please enter 13 digit long
     sleep                                           1s

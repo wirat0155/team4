@@ -13,7 +13,7 @@ ${agn_firstname_lastname}   อัศวิน วงศ์สว่าง
 ${agn_tel_format}           090-888-9888
 
 **Keywords**
-add_agent_agn_company_name_exist
+add_agent_agn_company__name_exist
     Click Element       xpath=//*[@id="Agent_list_table_filter"]/a
     sleep               1s
     Input Text          name=agn_company_name       ${agn_company_name}     
@@ -23,7 +23,7 @@ add_agent_agn_company_name_exist
     Input Text          name=agn_lastname           ${agn_lastname}   
     Input Text          name=agn_tel                ${agn_tel}     
     Input Text          name=agn_email              ${agn_email} 
-    Click Button        xpath=//*[@id="add_agent_form"]/div/div/div/div[2]/button
+    Click Button        class=positive
 
 
 **Test Cases**

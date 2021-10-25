@@ -2,7 +2,7 @@
 Library                     Selenium2Library
 
 **Variables**
-${agn_company_name}         เนคเทค
+${agn_company_name}         เนคเทค1
 ${agn_tax}                  1234567890123
 ${agn_address}              12
 ${agn_firstname}            อัศวิน
@@ -23,7 +23,7 @@ add_agent_agn_address_length_2
     Input Text          name=agn_lastname           ${agn_lastname}   
     Input Text          name=agn_tel                ${agn_tel}     
     Input Text          name=agn_email              ${agn_email} 
-    Click Button        xpath=//*[@id="add_agent_form"]/div/div/div/div[2]/button
+    Click Button        class=positive
 
 
 **Test Cases**
