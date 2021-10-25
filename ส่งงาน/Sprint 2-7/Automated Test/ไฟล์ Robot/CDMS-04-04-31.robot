@@ -30,7 +30,7 @@ ${agn_address}              68/1 ตำบลอ่างศิลา อำเ�
 ${agn_firstname}            นวมินทร์
 ${agn_tel}                  08123456
 ${agn_email}                nwamin29@gmail.com
-${agn_firstname_lastname}   นวมินทร์ A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happyl
+${agn_firstname_lastname}   นวมินทร์ A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happ
 ${agn_tel_format}           081-234-5678
 
 **Keywords**
