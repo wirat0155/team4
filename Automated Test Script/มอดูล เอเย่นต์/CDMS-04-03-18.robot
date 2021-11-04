@@ -2,7 +2,7 @@
 Library                     Selenium2Library
 
 **Variables**
-${agn_company_name}         ร่ำรวย จำกัด
+${agn_company_name}         ร่ำรวย จำกัด3
 ${agn_tax}                  12345678901234
 ${agn_address}              111/1 ต.แสนสุข อ.เมืองชลบุรี จ.ชลบุรี
 ${agn_firstname}            ขยัน
@@ -13,7 +13,7 @@ ${agn_firstname_lastname}   นวมินทร์ อินทราทิพ
 ${agn_tel_format}           081-234-5678
 
 **Keywords**
-add_agent_success 
+add_agent_agn_tax_length_14
     Click Element       xpath=//*[@id="Agent_list_table_filter"]/a
     sleep               1s
     Input Text          name=agn_company_name       ${agn_company_name}     
@@ -23,17 +23,13 @@ add_agent_success
     Input Text          name=agn_lastname           ${agn_lastname}   
     Input Text          name=agn_tel                ${agn_tel}     
     Input Text          name=agn_email              ${agn_email} 
-    Click Button        xpath=//*[@id="add_agent_form"]/div/div/div/div[2]/button
+    Click Button        class=positive
 
 
 **Test Cases**
 Case CDMS-04-03-18
     Open Browser                                    http://localhost/code_team4/public/Agent_show/agent_show_ajax           chrome
     sleep                                           1s
-    add_agent_success
-    Element Text Should Be                          xpath=//*[@id="Agent_list_table"]/tbody/tr[1]/td[2]                     ${agn_company_name}
-    Element Text Should Be                          xpath=//*[@id="Agent_list_table"]/tbody/tr[1]/td[3]                     ${agn_firstname_lastname}
-    Element Text Should Be                          xpath=//*[@id="Agent_list_table"]/tbody/tr[1]/td[4]                     0
-    Element Text Should Be                          xpath=//*[@id="Agent_list_table"]/tbody/tr[1]/td[5]                     ${agn_tel_format}
-    Element Text Should Be                          xpath=//*[@id="Agent_list_table"]/tbody/tr[1]/td[6]                     ${agn_email}
+    add_agent_agn_tax_length_14
+    Element Text Should Be                          //*[@id="agent_section"]/div[2]/div[1]/div[4]/label            Please enter 13 digit long
     sleep                                           1s
