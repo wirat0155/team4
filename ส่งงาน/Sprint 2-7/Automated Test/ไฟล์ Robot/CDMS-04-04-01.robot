@@ -25,7 +25,7 @@ update_agent_success
     Input Text          name=agn_lastname           ${agn_lastname}   
     Input Text          name=agn_tel                ${agn_tel}     
     Input Text          name=agn_email              ${agn_email} 
-    Click Button        xpath=//*[@id="car_action"]/button
+    Click Button        class=positive
 
 
 **Test Cases**
