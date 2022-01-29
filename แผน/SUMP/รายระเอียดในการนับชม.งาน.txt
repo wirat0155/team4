@@ -1,0 +1,17 @@
+Management and miscellaneous => งานเรื่อยเปื่อย, งานนอก
+Launch and strategy => การตั้งเป้าหมายทีม
+Planning => ประชุมวางแผน
+Requirements => เอกสารSRSD
+Test plan => เอกสาร Test plan
+Requirements review => ตรวจSRSD
+High-level design => แผนภาพ
+High-level design review => ตรวจแผนภาพ
+Implementation planning => gantt, แผนทีม, แผนเดี่ยว, T&S, burndown
+Code => โค้ด
+Code review => รีวิวโค้ด
+Build and integration => งานที่ทดสอบ สีเหลือง
+System test => เทสระบบ
+Documentation => เอกสารทั้งหมด
+
+คำนวณ actual%
+actual x 100 /plan
